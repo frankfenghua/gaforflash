@@ -38,7 +38,7 @@ package com.google.analytics.utils
     {
         private var _dom:HTMLDOM;
         
-        private var _protocol:String;
+        private var _protocol:String="https";
         private var _appName:String;
         private var _appVersion:version;
         private var _userAgent:String;
@@ -371,7 +371,15 @@ package com.google.analytics.utils
             
             return _protocol;
         }
-        
+
+        /**
+         * Indicates the Protocols object of this local info.
+         */
+        public function set protocol(value:String):void
+        {
+            _protocol = value;
+        }
+
         /**
          * Indicates the height of the screen.
          * @see Capabilities.screenResolutionY

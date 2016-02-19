@@ -5,9 +5,10 @@
     <target name="define">
         
         <property name="FLEX_HOME_MAC" value="/OpenSource/Flex/sdks/4.5.0" />
-        <property name="FLEX_HOME_WIN" value="c:/OpenSource/Flex/sdks/4.5.0" />
-        
-        <property name="local.flashplayerversion" value="10" />
+        <!--<property name="FLEX_HOME_WIN" value="c:/OpenSource/Flex/sdks/4.5.0" />-->
+        <property name="FLEX_HOME_WIN" value="d:/apps/flex/flex_sdk_4.6" />
+
+        <property name="local.flashplayerversion" value="11" />
         
         <condition property="FLEX_HOME" value="${FLEX_HOME_MAC}">
             <os family="mac" />
